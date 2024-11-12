@@ -31,10 +31,10 @@ defmodule ElixirDropbox.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:httpoison, "~> 1.0"},
+      {:httpoison, ">= 1.8.0"},
       {:poison, "~> 1.5"},
       {:inch_ex, "~> 0.5", only: [:dev, :test]},
-      {:json, "~> 0.3.0"},
+      {:jason, ">= 1.3.0"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
       {:exvcr, "~> 0.10", only: :test},
       {:excoveralls, "~> 0.7", only: :test},
